@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&family=Space+Grotesk:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+html, body {
+    background-color: gray;
+}
+
+.scrollBox {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar stuff */ 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10000;
+
+}
+
+.nav {
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.nav a {
+    position: relative;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    margin-inline: 20px;
+    transition: color 300ms ease;
+    transition: transform 300ms ease;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+.nav a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    background: white;
+    transition: 350ms;
+}
+
+.nav a:hover::before {
+    width: 100%;
+}
+
+.nav a:hover {
+    transform: scale(1.15);
+}
+
+header .logo {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Earth_Moon_comparision_sketch.svg/1200px-Earth_Moon_comparision_sketch.svg.png');
+    background-size: 80px;
+    height: 80px;
+    display: inline-block;
+    text-indent: 500000px;
+    width: 80px;
+    transition: transform 300ms ease;
+    margin-top: 0px;
+}
+
+header .logo:hover{
+    transform: scale(1.2);
+}
+
+/* main home screen section */
+
+.mainSection {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(15,10,10,1) 100%);
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.mainSectionLabel .bigText{
+    text-align: center;
+    color: white;
+    font-size: 90px;
+    margin-top: 100px;
+}
+
+.mainSectionLabel .smallText {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.missionBox {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: rgb(20,15,15);
+    background: linear-gradient(180deg, rgba(20,15,15,1) 0%, rgba(30,25,25,1) 100%);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.missionHed {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.missionContent {
+    padding: 40px;
+    padding-top: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.mBox {
+    position: relative;
+}
+
+/* first curves */
+.custom-shape-divider-top-1695181117 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1695181117 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 84px;
+}
+
+.custom-shape-divider-top-1695181117 .shape-fill {
+    fill: #0F0A0A;
+}
+
+/* second curve */
+.custom-shape-divider-bottom-1695181414 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1695181414 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-bottom-1695181414 .shape-fill {
+    fill: #231E1E;
+}
+
+.aBox {
+    position: relative;
+}
+
+/* 3rd curve */ 
+.custom-shape-divider-bottom-1695181703 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1695181703 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+}
+
+.custom-shape-divider-bottom-1695181703 .shape-fill {
+    fill: #1E1919;
+}
+
+/* -------------------------------------------------------- */
+
+.activitiesBox {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background: rgb(35,30,30);
+    color: white;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.activitiesHead {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5=30px;
+}
+
+.activitiesContent {
+    padding: 40px;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.activitiesContent div {
+    margin: auto;
+}
+
+.fairBox, .researchBox, .competitionsBox {
+    padding: 30px;
+}
+
+.moreInfo {
+    text-align: center;
+}
+
+
+.eventsButton {
+    margin: auto;
+}
+.eventsLink  {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    border: white 0.13em solid;
+    padding: 0.3em 1em;
+    border-radius: 0.25em;
+
+    text-shadow: 0 0 0.125em currentColor; 
+
+    box-shadow: inset 0 0 0.3em 0 white, 0 0 0.5em 0 white;
+
+    position: relative;
+    transition: background-color 100ms linear;
+}
+
+/* pseudo element for button relfection */ 
+
+.eventsLink::before {
+    pointer-events: none;
+    content:'';
+    position: absolute;
+    background: white;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(2em) rotateX(40deg) scale(1, 0.5);
+    filter: blur(1em);
+    opacity: 0.5;
+}
+
+.eventsLink::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 1em 0.5em white;
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+
+.eventsLink:hover, .neon-button:focus {
+    background: white;
+    color: rgb(25,25,30);
+    text-shadow: none;
+}
+
+.eventsLink:hover::after, .eventsLink:hover::before {
+    opacity: 0.6;
+}
+
+.bioBox {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: rgb(30,25,25);
+    background: linear-gradient(180deg, rgba(30,25,25,1) 0%, rgba(10,5,5,1) 100%);
+    color: white;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.bioHead {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 5=30px;
+}
+
+.bioContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.amroBox, .akshitBox, .ishanBox, .symeBox {
+    font-size: 20px;
+    padding: 30px;
+    background: rgb(30,25,25);
+    height: 450px;
+    width: 400px;
+    margin: 10px;
+}
